@@ -17,9 +17,9 @@ public class MonitoringPoint {
 	 * @param Description
 	 * @param SiteUse
 	 */
-	public MonitoringPoint(String siteName, String sitePoint, String Latitude, String Longitude, String escription,
+	public MonitoringPoint(String sitename, String sitePoint, String Latitude, String Longitude, String escription,
 			String siteUse) {
-		this.SiteName = siteName;
+		this.SiteName = sitename;
 		this.SitePoint = sitePoint;
 		this.Latitude = Latitude;
 		this.Longitude = Longitude;

@@ -44,7 +44,7 @@
 </thead>
 <tbody>  <c:forEach items="${WATERQUALITIES}" var="waterQuality" varStatus="loop">
     <tr>
-      <td><c:out value="${waterQuality.getSampleDate()}" /></td>
+      <td><c:out value="${waterQuality.getSampleDate()}" /></td> 
       <td><c:out value="${waterQuality.getSampledBy()}" /></td>
       <td><c:out value="${waterQuality.getSiteCondition()}" /></td>
       <td><c:out value="${waterQuality.getPH()}" /></td>
@@ -68,6 +68,8 @@
     </tr>
   </c:forEach></tbody>
 </table>
+
+
 
 </body>
 </html>

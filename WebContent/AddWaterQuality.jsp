@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -76,15 +77,15 @@
 <form  name=addForm action=addData method=post>
 
 <label> Sample Date :</label>
-<input type = text name = SampleDate value="" placeholder="YYYY-MM-DD"/>
+<input type = "text" name = "SampleDate" placeholder="YYYY-MM-DD" required>
 <br/>
 
 <label> Sampled By :</label>
-<input type = text name = SampledBy value=""/>
+<input type = "text" name = SampledBy value=""/>
 <br/>
 
 <label> Site Condition :</label>
-<input type = text name =SiteCondition value=""/>
+<input type = "text" name =SiteCondition value=""/>
 <br/>
 
 <label> PH :</label>
@@ -151,16 +152,28 @@
 <input type = text name =Zinc value=""/>
 <br/>
 
-
 <label> Site Name :</label>
- <select id = Site name="Site">
-    <option value="Tanyard Creek"> Tanyard Creek</option>
-    <option value="Lilly Branch">Lilly Branch</option> 
-  </select>
- 
-<label> Site Point :</label>
-<input type = text name= Sitepoint value=""/>
+ <select name="Site">
+    <option value="Tanyard Creek"> Tanyard Creek </option>
+    <option value="Lilly Branch"> Lilly Branch</option> 
+    <option value="Cloverhurst Branch"> Cloverhurst Branch</option> 
+  </select>
+  <br/>
 
+<label> Site Point :</label>
+<select name= "Sitepoint" >
+	<option value ="MP-3"> MP-3 </option>
+	<option value ="MP-10"> MP-10 </option>
+	<option value ="MP-8"> MP-8 </option>
+	<option value ="MP-9"> MP-9 </option>
+	<option value ="MP-1"> MP-1 </option>
+	<option value ="MP-6"> MP-6 </option>
+	<option value ="MS4-2"> MS4-2 </option>
+	<option value ="MS4-3"> MS4-3 </option>
+	<option value ="MS4-4b"> MS4-4b </option>
+	<option value ="MS4-4c"> MS4-4c </option>
+	<option value ="MS4-8"> MS4-8 </option>
+</select>
 <br/>
 <input type =submit name =submit value="Add Data"/>
 </form>
