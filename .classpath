@@ -11,5 +11,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="/Applications/apache-tomcat-7.0.75/lib/catalina.jar"/>
 	<classpathentry kind="lib" path="/Applications/apache-tomcat-7.0.75/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="/Applications/apache-tomcat-7.0.75/lib/gson-2.6.2.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
